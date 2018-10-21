@@ -1,6 +1,5 @@
 package map.hashmap;
 
-import java.util.HashMap;
 
 /**
  * @Auther: Kam
