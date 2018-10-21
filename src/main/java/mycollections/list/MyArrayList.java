@@ -33,17 +33,19 @@ public class MyArrayList<E> {
     public int size() {
         return size;
     }
+
     /**
      * 拓容大小
      */
-    private void grow(){
+    private void grow() {
         MyArrayList newArr = null;
-        if(size==elementData.length){
+        if (size == elementData.length) {
             newArr = new MyArrayList(size * GROW_NUM);
-            System.arraycopy(elementData,0,newArr.elementData,0,size);
+            System.arraycopy(elementData, 0, newArr.elementData, 0, size);
             this.elementData = newArr.elementData;
         }
     }
+
     /**
      * 向MyArraylist中添加数据
      *
@@ -72,7 +74,6 @@ public class MyArrayList<E> {
      * @param index
      * @return
      */
-    @SuppressWarnings("unchecked")
     private E elementData(int index) {
         return (E) elementData[index];
     }
